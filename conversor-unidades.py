@@ -1,4 +1,4 @@
-print("------------------Conversor de Unidades------------------\n")
+print("------------------Conversor de Bases------------------\n")
 
 res = str(input("Converter para:\n\n[B]inário\n[O]ctal\n[H]exadecimal\n\nR: "))
 print("\n-------------------------Informe-------------------------")
