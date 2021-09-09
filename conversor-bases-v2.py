@@ -3,10 +3,16 @@ while not finish:
     print("-------------------Conversor de Bases--------------------\n")
     res = str.upper((input("Converter para:\n\n[B]inário\n[O]ctal\n[H]exadecimal\n\n[S]air\n\nR: ")))
 
-    if res == "O" or res == "B" or res == "O":
+    if res == "O" or res == "B" or res == "H":
         print("\n-------------------------Informe-------------------------\n")
-        num = int(input("Digite o Número Decimal: "))
-        finish = True
+
+        try:
+            num = int(input("Digite o Número Decimal: "))
+            finish = True
+
+        except ValueError:
+            print("\n--------------------------ERRO---------------------------\n")
+            print("Digite um número!\n")
 
     elif res == "S":
         print("\nObrigado por usar este programa! c:")
